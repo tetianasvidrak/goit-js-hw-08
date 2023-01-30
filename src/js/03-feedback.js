@@ -24,6 +24,10 @@ const onInputFormHandler = event => {
 const onSubmitBtnHandler = event => {
   event.preventDefault();
   console.log(formData);
+  formData = {
+    email: '',
+    message: '',
+  };
   formRef.reset();
   localStorage.removeItem('feedback-form-state');
 };
